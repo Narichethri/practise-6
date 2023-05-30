@@ -1,0 +1,40 @@
+*{
+	background-color:black;
+}
+.list {
+	list-style: none;
+	margin-top:22%;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	
+  }
+  
+  .list li {
+	margin: 0 20px;
+	position: relative;
+  }
+  
+  .list li a {
+	color:white;
+	text-decoration: none;
+	position: relative;
+
+  }
+  
+  .list li a:hover {
+	color:yellow;
+  }
+  
+  .list li a:hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color:yellow;
+	bottom: -8px;
+	left: 50%;
+	border-radius: 50%;
+  }
+  
